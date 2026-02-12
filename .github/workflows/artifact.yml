@@ -13,6 +13,8 @@ jobs:
     - name: Create a text file
       run: |
            echo "Hello, world!" > hello.txt
+           mkdir ./artifacts
+           ls -lrt
            mv hello.txt ./artifacts
       
     - name: Archive text file
@@ -35,5 +37,6 @@ jobs:
     - name: Display file content
       run: | 
           cat ./artifacts/hello.txt
+
 
 
